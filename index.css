@@ -1,0 +1,149 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  color: white;
+  background: #161E2A;
+}
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+p {
+  color: #768190;
+}
+.active-link {
+  color: white;
+}
+.center-btn {
+  position: relative;
+  top: 1em;
+  margin: 0 auto;
+  display: block;
+}
+button {
+  outline: none;
+  border: 2px solid white;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+button:hover {
+  background: #2D394D;
+}
+input {
+  outline: none;
+  border: none;
+}
+textarea {
+  border: none;
+  border-bottom: 1px solid #2D394D;
+  outline: none;
+}
+.small-h1 {
+  font-size: 20px;
+}
+
+ul, li a {
+  list-style-type: none;
+  text-decoration: none;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+header li a{
+  padding: 0 2em 0.5em 2em;
+  font-size: 18px;
+  color: #768190;
+}
+header li a:hover {
+  color: #C9D0D8;
+}
+
+.center-h1 {
+  text-align: center;
+}
+.wide-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+}
+.wide-ul li {
+  padding: 0 1em;
+}
+
+.small-code {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: 2em 0;
+}
+.left-bar li {
+  padding: .4em 0;
+  border-bottom: 1px solid #2D394D;
+  width: 90%;
+}
+.left-bar li:last-child {
+  border: none;
+}
+.left-bar a {
+  color: #768190;
+}
+.left-bar .active-link {
+  color: white;
+}
+.small-code p {
+  font-size: 14px;
+}
+.small-code textarea {
+  border-bottom: 1px solid #2D394D;
+  width: 30em;
+  font-size: 14px;
+  width: 100%;
+  padding-bottom: 0.2em;
+  margin: 1em 0;
+}
+@media screen and (max-width: 1200px) {
+  .left-bar { display: none }
+  .small-code { display: inline-block }
+}
+
+.user-ad {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.user-ad p {
+  margin-top: 3em;
+}
+.user-ad li {
+  margin-top: 0.5em;
+}
+.user-ad-right {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.img {
+  width: 12em;
+  height: 7em;
+  background: #2D394D;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 1600px) {
+  .img { display: none }
+}
+
+.footer-wrapper {
+  display: flex;
+  margin-top: 20em;
+  
+}
+.footer-ul {
+  margin-right: 2em;
+}
+.footer-ul a{
+  color: #768190;
+}
